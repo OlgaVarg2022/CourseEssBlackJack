@@ -79,7 +79,7 @@ class Game:
                 player.take_card(card)
                 is_stop = self.check_stop(player)
                 if is_stop: 
-                    if player.total_points > 21 or isinstance(player, Player):                    
+                    if player.total_points > 21:                    
                         self.remove_player(player)
                     break
                 if isinstance(player, Player):                    
@@ -132,4 +132,5 @@ class Game:
             else:
                 for player in self.players:
                     player.cards.clear()
+                self.dealer.cards.clear()
        

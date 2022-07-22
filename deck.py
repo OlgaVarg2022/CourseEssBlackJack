@@ -11,7 +11,7 @@ class Card:
         self.points = points
 
     def __str__(self):
-        return str(self.picture) + '\nPoints:'+ str(self.points)
+        return str(self.picture)
         
 
 class Deck:
